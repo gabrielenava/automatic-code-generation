@@ -1,0 +1,689 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>RTW Report - autoGenTest.cpp</title>
+<style> .LN { font-style: italic; color: #888888 } </style>
+<style> .CT { font-style: italic; color: #117755 } </style>
+<style> .PP { font-style: bold;   color: #992211 } </style>
+<style> .KW { font-style: bold;   color: #112266 } </style>
+<style> .DT { font-style: bold;   color: #112266 } </style>
+<link rel="stylesheet" type="text/css" href="rtwreport.css"></link><script language="JavaScript" type="text/javascript" src="rtwreport_utils.js"></script>
+<SCRIPT type="text/javascript" src="rtwannotate.js"></SCRIPT>
+</head>
+<body bgcolor="#eeeeee" text="#1122aa" onload="try {if (top) { if (top.rtwFileOnLoad) top.rtwFileOnLoad(window.document); else local_onload();}} catch(err) {};if (typeof rtwannotate === 'function') {rtwannotate('autoGenTest_cpp_cov.xml');}">
+<p>
+<table border="0" cellspacing="0" cellpadding="6" width="100%%" height="100%%"><tr><td width="100%%" valign="top" bgcolor="#ffffff">
+<h4>File: <a href="../autoGenTest.cpp" target="rtwreport_document_frame" id="linkToText_plain">autoGenTest.cpp</a></h4>
+<pre id="RTWcode">
+<span><a class="LN" name="1">    1   </a><span class="CT">//</span>
+</span><span><a class="LN" name="2">    2   </a><span class="CT">// File: autoGenTest.cpp</span>
+</span><span><a class="LN" name="3">    3   </a><span class="CT">//</span>
+</span><span><a class="LN" name="4">    4   </a><span class="CT">// Code generated for Simulink model 'autoGenTest'.</span>
+</span><span><a class="LN" name="5">    5   </a><span class="CT">//</span>
+</span><span><a class="LN" name="6">    6   </a><span class="CT">// Model version                  : 1.15</span>
+</span><span><a class="LN" name="7">    7   </a><span class="CT">// Simulink Coder version         : 8.6 (R2014a) 27-Dec-2013</span>
+</span><span><a class="LN" name="8">    8   </a><span class="CT">// C/C++ source code generated on : Thu Oct 26 13:58:58 2017</span>
+</span><span><a class="LN" name="9">    9   </a><span class="CT">//</span>
+</span><span><a class="LN" name="10">   10   </a><span class="CT">// Target selection: ert.tlc</span>
+</span><span><a class="LN" name="11">   11   </a><span class="CT">// Embedded hardware selection: 32-bit Generic</span>
+</span><span><a class="LN" name="12">   12   </a><span class="CT">// Code generation objectives: Unspecified</span>
+</span><span><a class="LN" name="13">   13   </a><span class="CT">// Validation result: Not run</span>
+</span><span><a class="LN" name="14">   14   </a><span class="CT">//</span>
+</span><span><a class="LN" name="15">   15   </a><font color="#992211">#</font><span class="PP">include</span> <font color="#992211">&quot;autoGenTest.h&quot;</font>
+</span><span><a class="LN" name="16">   16   </a><font color="#992211">#</font><span class="PP">include</span> <font color="#992211">&quot;autoGenTest_private.h&quot;</font>
+</span><span><a class="LN" name="17">   17   </a>
+</span><span><a class="LN" name="18">   18   </a><span class="CT">// Model step function</span>
+</span><span><a class="LN" name="19">   19   </a><span class="DT">void</span> <a name="fcn_autoGenTest_step">autoGenTest_step</a>(<a href="autoGenTest_types_h.html#type_RT_MODEL_autoGenTest_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_RT_MODEL_autoGenTest_T');" target="_self"><font color="#1122aa">RT_MODEL_autoGenTest_T</font></a> *<span class="DT">const</span> autoGenTest_M)
+</span><span><a class="LN" name="20">   20   </a><b>{</b>
+</span><span><a class="LN" name="21">   21   </a>  <a href="autoGenTest_types_h.html#type_P_autoGenTest_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_P_autoGenTest_T');" target="_self"><font color="#1122aa">P_autoGenTest_T</font></a> *autoGenTest_P = ((<a href="autoGenTest_types_h.html#type_P_autoGenTest_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_P_autoGenTest_T');" target="_self"><font color="#1122aa">P_autoGenTest_T</font></a> *)
+</span><span><a class="LN" name="22">   22   </a>    autoGenTest_M-&gt;ModelData.defaultParam);
+</span><span><a class="LN" name="23">   23   </a>  <a href="autoGenTest_h.html#type_B_autoGenTest_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_B_autoGenTest_T');" target="_self"><font color="#1122aa">B_autoGenTest_T</font></a> *autoGenTest_B = ((<a href="autoGenTest_h.html#type_B_autoGenTest_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_B_autoGenTest_T');" target="_self"><font color="#1122aa">B_autoGenTest_T</font></a> *)
+</span><span><a class="LN" name="24">   24   </a>    autoGenTest_M-&gt;ModelData.blockIO);
+</span><span><a class="LN" name="25">   25   </a>  <a href="autoGenTest_h.html#type_DW_autoGenTest_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_DW_autoGenTest_T');" target="_self"><font color="#1122aa">DW_autoGenTest_T</font></a> *autoGenTest_DW = ((<a href="autoGenTest_h.html#type_DW_autoGenTest_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_DW_autoGenTest_T');" target="_self"><font color="#1122aa">DW_autoGenTest_T</font></a> *)
+</span><span><a class="LN" name="26">   26   </a>    autoGenTest_M-&gt;ModelData.dwork);
+</span><span><a class="LN" name="27">   27   </a>
+</span><span><a class="LN" name="28">   28   </a>  <span class="CT">// local block i/o variables</span>
+</span><span><a class="LN" name="29">   29   </a>  real_T rtb_Clock;
+</span><span><a class="LN" name="30">   30   </a>  int32_T i;
+</span><span><a class="LN" name="31">   31   </a>
+</span><span><a class="LN" name="32">   32   </a>  <span class="CT">// Level2 S-Function Block: '<a href="matlab:coder.internal.code2model('autoGenTest:6')" name="code2model"><font color="#117755"><i>&lt;Root&gt;/Simulator Synchronizer</i></font></a>' (WBToolbox)</span>
+</span><span><a class="LN" name="33">   33   </a>  <b>{</b>
+</span><span><a class="LN" name="34">   34   </a>    SimStruct *rts = autoGenTest_M-&gt;childSfunctions[0];
+</span><span><a class="LN" name="35">   35   </a>    sfcnOutputs(rts, 1);
+</span><span><a class="LN" name="36">   36   </a>  <b>}</b>
+</span><span><a class="LN" name="37">   37   </a>
+</span><span><a class="LN" name="38">   38   </a>  <span class="CT">// Gain: '<a href="matlab:coder.internal.code2model('autoGenTest:4')" name="code2model"><font color="#117755"><i>&lt;Root&gt;/Gain</i></font></a>' incorporates:</span>
+</span><span><a class="LN" name="39">   39   </a>  <span class="CT">//   Constant: '<a href="matlab:coder.internal.code2model('autoGenTest:3')" name="code2model"><font color="#117755"><i>&lt;Root&gt;/Constant</i></font></a>'</span>
+</span><span><a class="LN" name="40">   40   </a>
+</span><span><a class="LN" name="41">   41   </a>  <span class="KW">for</span> (i = 0; i &lt; 23; i++) <b>{</b>
+</span><span><a class="LN" name="42">   42   </a>    autoGenTest_B-&gt;Gain[i] = autoGenTest_P-&gt;Gain_Gain *
+</span><span><a class="LN" name="43">   43   </a>      autoGenTest_P-&gt;Constant_Value[i];
+</span><span><a class="LN" name="44">   44   </a>  <b>}</b>
+</span><span><a class="LN" name="45">   45   </a>
+</span><span><a class="LN" name="46">   46   </a>  <span class="CT">// End of Gain: '<a href="matlab:coder.internal.code2model('autoGenTest:4')" name="code2model"><font color="#117755"><i>&lt;Root&gt;/Gain</i></font></a>'</span>
+</span><span><a class="LN" name="47">   47   </a>
+</span><span><a class="LN" name="48">   48   </a>  <span class="CT">// Level2 S-Function Block: '<a href="matlab:coder.internal.code2model('autoGenTest:2:1672')" name="code2model"><font color="#117755"><i>&lt;S1&gt;/S-Function</i></font></a>' (WBToolbox)</span>
+</span><span><a class="LN" name="49">   49   </a>  <b>{</b>
+</span><span><a class="LN" name="50">   50   </a>    SimStruct *rts = autoGenTest_M-&gt;childSfunctions[1];
+</span><span><a class="LN" name="51">   51   </a>    sfcnOutputs(rts, 0);
+</span><span><a class="LN" name="52">   52   </a>  <b>}</b>
+</span><span><a class="LN" name="53">   53   </a>
+</span><span><a class="LN" name="54">   54   </a>  <span class="CT">// Clock: '<a href="matlab:coder.internal.code2model('autoGenTest:13:1298')" name="code2model"><font color="#117755"><i>&lt;S3&gt;/Clock</i></font></a>'</span>
+</span><span><a class="LN" name="55">   55   </a>  rtb_Clock = autoGenTest_M-&gt;Timing.t[0];
+</span><span><a class="LN" name="56">   56   </a>
+</span><span><a class="LN" name="57">   57   </a>  <span class="CT">// MATLAB Function: '<a href="matlab:coder.internal.code2model('autoGenTest:13:1300')" name="code2model"><font color="#117755"><i>&lt;S3&gt;/MATLAB Function</i></font></a>'</span>
+</span><span><a class="LN" name="58">   58   </a>  <span class="CT">// MATLAB Function 'Utilities/holder /MATLAB Function': '<a href="matlab:coder.internal.code2model('autoGenTest:13:1300:1')" name="code2model"><font color="#117755"><i>&lt;S5&gt;:1</i></font></a>'</span>
+</span><span><a class="LN" name="59">   59   </a>  <span class="KW">if</span> (!autoGenTest_DW-&gt;state_not_empty) <b>{</b>
+</span><span><a class="LN" name="60">   60   </a>    <span class="CT">// '<a href="matlab:coder.internal.code2model('autoGenTest:13:1300:1:5')" name="code2model"><font color="#117755"><i>&lt;S5&gt;:1:5</i></font></a>'</span>
+</span><span><a class="LN" name="61">   61   </a>    <span class="CT">// '<a href="matlab:coder.internal.code2model('autoGenTest:13:1300:1:6')" name="code2model"><font color="#117755"><i>&lt;S5&gt;:1:6</i></font></a>'</span>
+</span><span><a class="LN" name="62">   62   </a>    memcpy(&amp;autoGenTest_DW-&gt;state[0], &amp;autoGenTest_B-&gt;SFunction[0], 23U * <span class="KW">sizeof</span>
+</span><span><a class="LN" name="63">   63   </a>           (real_T));
+</span><span><a class="LN" name="64">   64   </a>    autoGenTest_DW-&gt;state_not_empty = true;
+</span><span><a class="LN" name="65">   65   </a>  <b>}</b>
+</span><span><a class="LN" name="66">   66   </a>
+</span><span><a class="LN" name="67">   67   </a>  <span class="CT">// Sum: '<a href="matlab:coder.internal.code2model('autoGenTest:5')" name="code2model"><font color="#117755"><i>&lt;Root&gt;/Sum</i></font></a>' incorporates:</span>
+</span><span><a class="LN" name="68">   68   </a>  <span class="CT">//   MATLAB Function: '<a href="matlab:coder.internal.code2model('autoGenTest:13:1300')" name="code2model"><font color="#117755"><i>&lt;S3&gt;/MATLAB Function</i></font></a>'</span>
+</span><span><a class="LN" name="69">   69   </a>
+</span><span><a class="LN" name="70">   70   </a>  <span class="CT">// '<a href="matlab:coder.internal.code2model('autoGenTest:13:1300:1:9')" name="code2model"><font color="#117755"><i>&lt;S5&gt;:1:9</i></font></a>'</span>
+</span><span><a class="LN" name="71">   71   </a>  <span class="KW">for</span> (i = 0; i &lt; 23; i++) <b>{</b>
+</span><span><a class="LN" name="72">   72   </a>    autoGenTest_B-&gt;Sum[i] = autoGenTest_B-&gt;Gain[i] + autoGenTest_DW-&gt;state[i];
+</span><span><a class="LN" name="73">   73   </a>  <b>}</b>
+</span><span><a class="LN" name="74">   74   </a>
+</span><span><a class="LN" name="75">   75   </a>  <span class="CT">// End of Sum: '<a href="matlab:coder.internal.code2model('autoGenTest:5')" name="code2model"><font color="#117755"><i>&lt;Root&gt;/Sum</i></font></a>'</span>
+</span><span><a class="LN" name="76">   76   </a>
+</span><span><a class="LN" name="77">   77   </a>  <span class="CT">// Level2 S-Function Block: '<a href="matlab:coder.internal.code2model('autoGenTest:1:1769')" name="code2model"><font color="#117755"><i>&lt;S2&gt;/S-Function</i></font></a>' (WBToolbox)</span>
+</span><span><a class="LN" name="78">   78   </a>  <b>{</b>
+</span><span><a class="LN" name="79">   79   </a>    SimStruct *rts = autoGenTest_M-&gt;childSfunctions[2];
+</span><span><a class="LN" name="80">   80   </a>    sfcnOutputs(rts, 0);
+</span><span><a class="LN" name="81">   81   </a>  <b>}</b>
+</span><span><a class="LN" name="82">   82   </a>
+</span><span><a class="LN" name="83">   83   </a>  <span class="CT">// Level2 S-Function Block: '<a href="matlab:coder.internal.code2model('autoGenTest:6')" name="code2model"><font color="#117755"><i>&lt;Root&gt;/Simulator Synchronizer</i></font></a>' (WBToolbox)</span>
+</span><span><a class="LN" name="84">   84   </a>  <b>{</b>
+</span><span><a class="LN" name="85">   85   </a>    SimStruct *rts = autoGenTest_M-&gt;childSfunctions[0];
+</span><span><a class="LN" name="86">   86   </a>    sfcnUpdate(rts, 1);
+</span><span><a class="LN" name="87">   87   </a>    <span class="KW">if</span> (ssGetErrorStatus(rts) != (NULL))
+</span><span><a class="LN" name="88">   88   </a>      <span class="KW">return</span>;
+</span><span><a class="LN" name="89">   89   </a>  <b>}</b>
+</span><span><a class="LN" name="90">   90   </a>
+</span><span><a class="LN" name="91">   91   </a>  <span class="CT">// Level2 S-Function Block: '<a href="matlab:coder.internal.code2model('autoGenTest:2:1672')" name="code2model"><font color="#117755"><i>&lt;S1&gt;/S-Function</i></font></a>' (WBToolbox)</span>
+</span><span><a class="LN" name="92">   92   </a>  <b>{</b>
+</span><span><a class="LN" name="93">   93   </a>    SimStruct *rts = autoGenTest_M-&gt;childSfunctions[1];
+</span><span><a class="LN" name="94">   94   </a>    sfcnUpdate(rts, 0);
+</span><span><a class="LN" name="95">   95   </a>    <span class="KW">if</span> (ssGetErrorStatus(rts) != (NULL))
+</span><span><a class="LN" name="96">   96   </a>      <span class="KW">return</span>;
+</span><span><a class="LN" name="97">   97   </a>  <b>}</b>
+</span><span><a class="LN" name="98">   98   </a>
+</span><span><a class="LN" name="99">   99   </a>  <span class="CT">// Level2 S-Function Block: '<a href="matlab:coder.internal.code2model('autoGenTest:1:1769')" name="code2model"><font color="#117755"><i>&lt;S2&gt;/S-Function</i></font></a>' (WBToolbox)</span>
+</span><span><a class="LN" name="100">  100   </a>  <b>{</b>
+</span><span><a class="LN" name="101">  101   </a>    SimStruct *rts = autoGenTest_M-&gt;childSfunctions[2];
+</span><span><a class="LN" name="102">  102   </a>    sfcnUpdate(rts, 0);
+</span><span><a class="LN" name="103">  103   </a>    <span class="KW">if</span> (ssGetErrorStatus(rts) != (NULL))
+</span><span><a class="LN" name="104">  104   </a>      <span class="KW">return</span>;
+</span><span><a class="LN" name="105">  105   </a>  <b>}</b>
+</span><span><a class="LN" name="106">  106   </a>
+</span><span><a class="LN" name="107">  107   </a>  <span class="CT">// Update absolute time for base rate</span>
+</span><span><a class="LN" name="108">  108   </a>  <span class="CT">// The "clockTick0" counts the number of times the code of this task has</span>
+</span><span><a class="LN" name="109">  109   </a>  <span class="CT">//  been executed. The absolute time is the multiplication of "clockTick0"</span>
+</span><span><a class="LN" name="110">  110   </a>  <span class="CT">//  and "Timing.stepSize0". Size of "clockTick0" ensures timer will not</span>
+</span><span><a class="LN" name="111">  111   </a>  <span class="CT">//  overflow during the application lifespan selected.</span>
+</span><span><a class="LN" name="112">  112   </a>
+</span><span><a class="LN" name="113">  113   </a>  autoGenTest_M-&gt;Timing.t[0] =
+</span><span><a class="LN" name="114">  114   </a>    (++autoGenTest_M-&gt;Timing.clockTick0) * autoGenTest_M-&gt;Timing.stepSize0;
+</span><span><a class="LN" name="115">  115   </a>
+</span><span><a class="LN" name="116">  116   </a>  <b>{</b>
+</span><span><a class="LN" name="117">  117   </a>    <span class="CT">// Update absolute timer for sample time: [0.01s, 0.0s]</span>
+</span><span><a class="LN" name="118">  118   </a>    <span class="CT">// The "clockTick1" counts the number of times the code of this task has</span>
+</span><span><a class="LN" name="119">  119   </a>    <span class="CT">//  been executed. The absolute time is the multiplication of "clockTick1"</span>
+</span><span><a class="LN" name="120">  120   </a>    <span class="CT">//  and "Timing.stepSize1". Size of "clockTick1" ensures timer will not</span>
+</span><span><a class="LN" name="121">  121   </a>    <span class="CT">//  overflow during the application lifespan selected.</span>
+</span><span><a class="LN" name="122">  122   </a>
+</span><span><a class="LN" name="123">  123   </a>    autoGenTest_M-&gt;Timing.t[1] =
+</span><span><a class="LN" name="124">  124   </a>      (++autoGenTest_M-&gt;Timing.clockTick1) * autoGenTest_M-&gt;Timing.stepSize1;
+</span><span><a class="LN" name="125">  125   </a>  <b>}</b>
+</span><span><a class="LN" name="126">  126   </a><b>}</b>
+</span><span><a class="LN" name="127">  127   </a>
+</span><span><a class="LN" name="128">  128   </a><span class="CT">// Model initialize function</span>
+</span><span><a class="LN" name="129">  129   </a><span class="DT">void</span> <a name="fcn_autoGenTest_initialize">autoGenTest_initialize</a>(<a href="autoGenTest_types_h.html#type_RT_MODEL_autoGenTest_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_RT_MODEL_autoGenTest_T');" target="_self"><font color="#1122aa">RT_MODEL_autoGenTest_T</font></a> *<span class="DT">const</span> autoGenTest_M)
+</span><span><a class="LN" name="130">  130   </a><b>{</b>
+</span><span><a class="LN" name="131">  131   </a>  <a href="autoGenTest_types_h.html#type_P_autoGenTest_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_P_autoGenTest_T');" target="_self"><font color="#1122aa">P_autoGenTest_T</font></a> *autoGenTest_P = ((<a href="autoGenTest_types_h.html#type_P_autoGenTest_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_P_autoGenTest_T');" target="_self"><font color="#1122aa">P_autoGenTest_T</font></a> *)
+</span><span><a class="LN" name="132">  132   </a>    autoGenTest_M-&gt;ModelData.defaultParam);
+</span><span><a class="LN" name="133">  133   </a>  <a href="autoGenTest_h.html#type_B_autoGenTest_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_B_autoGenTest_T');" target="_self"><font color="#1122aa">B_autoGenTest_T</font></a> *autoGenTest_B = ((<a href="autoGenTest_h.html#type_B_autoGenTest_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_B_autoGenTest_T');" target="_self"><font color="#1122aa">B_autoGenTest_T</font></a> *)
+</span><span><a class="LN" name="134">  134   </a>    autoGenTest_M-&gt;ModelData.blockIO);
+</span><span><a class="LN" name="135">  135   </a>  <a href="autoGenTest_h.html#type_DW_autoGenTest_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_DW_autoGenTest_T');" target="_self"><font color="#1122aa">DW_autoGenTest_T</font></a> *autoGenTest_DW = ((<a href="autoGenTest_h.html#type_DW_autoGenTest_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_DW_autoGenTest_T');" target="_self"><font color="#1122aa">DW_autoGenTest_T</font></a> *)
+</span><span><a class="LN" name="136">  136   </a>    autoGenTest_M-&gt;ModelData.dwork);
+</span><span><a class="LN" name="137">  137   </a>
+</span><span><a class="LN" name="138">  138   </a>  <span class="CT">// Registration code</span>
+</span><span><a class="LN" name="139">  139   </a>
+</span><span><a class="LN" name="140">  140   </a>  <span class="CT">// initialize non-finites</span>
+</span><span><a class="LN" name="141">  141   </a>  <a href="rt_nonfinite_cpp.html#fcn_rt_InitInfAndNaN" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'fcn_rt_InitInfAndNaN');" target="_self"><font color="#1122aa">rt_InitInfAndNaN</font></a>(<span class="KW">sizeof</span>(real_T));
+</span><span><a class="LN" name="142">  142   </a>
+</span><span><a class="LN" name="143">  143   </a>  <b>{</b>
+</span><span><a class="LN" name="144">  144   </a>    <span class="CT">// Setup solver object</span>
+</span><span><a class="LN" name="145">  145   </a>    rtsiSetSimTimeStepPtr(&amp;autoGenTest_M-&gt;solverInfo,
+</span><span><a class="LN" name="146">  146   </a>                          &amp;autoGenTest_M-&gt;Timing.simTimeStep);
+</span><span><a class="LN" name="147">  147   </a>    rtsiSetTPtr(&amp;autoGenTest_M-&gt;solverInfo, &amp;rtmGetTPtr(autoGenTest_M));
+</span><span><a class="LN" name="148">  148   </a>    rtsiSetStepSizePtr(&amp;autoGenTest_M-&gt;solverInfo,
+</span><span><a class="LN" name="149">  149   </a>                       &amp;autoGenTest_M-&gt;Timing.stepSize0);
+</span><span><a class="LN" name="150">  150   </a>    rtsiSetErrorStatusPtr(&amp;autoGenTest_M-&gt;solverInfo, ((<span class="DT">const</span> char_T **)
+</span><span><a class="LN" name="151">  151   </a>      (&amp;rtmGetErrorStatus(autoGenTest_M))));
+</span><span><a class="LN" name="152">  152   </a>    rtsiSetRTModelPtr(&amp;autoGenTest_M-&gt;solverInfo, autoGenTest_M);
+</span><span><a class="LN" name="153">  153   </a>  <b>}</b>
+</span><span><a class="LN" name="154">  154   </a>
+</span><span><a class="LN" name="155">  155   </a>  rtsiSetSimTimeStep(&amp;autoGenTest_M-&gt;solverInfo, MAJOR_TIME_STEP);
+</span><span><a class="LN" name="156">  156   </a>  rtsiSetSolverName(&amp;autoGenTest_M-&gt;solverInfo,<font color="#1122ff">&quot;FixedStepDiscrete&quot;</font>);
+</span><span><a class="LN" name="157">  157   </a>  autoGenTest_M-&gt;solverInfoPtr = (&amp;autoGenTest_M-&gt;solverInfo);
+</span><span><a class="LN" name="158">  158   </a>
+</span><span><a class="LN" name="159">  159   </a>  <span class="CT">// Initialize timing info</span>
+</span><span><a class="LN" name="160">  160   </a>  <b>{</b>
+</span><span><a class="LN" name="161">  161   </a>    int_T *mdlTsMap = autoGenTest_M-&gt;Timing.sampleTimeTaskIDArray;
+</span><span><a class="LN" name="162">  162   </a>    mdlTsMap[0] = 0;
+</span><span><a class="LN" name="163">  163   </a>    mdlTsMap[1] = 1;
+</span><span><a class="LN" name="164">  164   </a>    autoGenTest_M-&gt;Timing.sampleTimeTaskIDPtr = (&amp;mdlTsMap[0]);
+</span><span><a class="LN" name="165">  165   </a>    autoGenTest_M-&gt;Timing.sampleTimes = (&amp;autoGenTest_M-&gt;
+</span><span><a class="LN" name="166">  166   </a>      Timing.sampleTimesArray[0]);
+</span><span><a class="LN" name="167">  167   </a>    autoGenTest_M-&gt;Timing.offsetTimes = (&amp;autoGenTest_M-&gt;
+</span><span><a class="LN" name="168">  168   </a>      Timing.offsetTimesArray[0]);
+</span><span><a class="LN" name="169">  169   </a>
+</span><span><a class="LN" name="170">  170   </a>    <span class="CT">// task periods</span>
+</span><span><a class="LN" name="171">  171   </a>    autoGenTest_M-&gt;Timing.sampleTimes[0] = (0.0);
+</span><span><a class="LN" name="172">  172   </a>    autoGenTest_M-&gt;Timing.sampleTimes[1] = (0.01);
+</span><span><a class="LN" name="173">  173   </a>
+</span><span><a class="LN" name="174">  174   </a>    <span class="CT">// task offsets</span>
+</span><span><a class="LN" name="175">  175   </a>    autoGenTest_M-&gt;Timing.offsetTimes[0] = (0.0);
+</span><span><a class="LN" name="176">  176   </a>    autoGenTest_M-&gt;Timing.offsetTimes[1] = (0.0);
+</span><span><a class="LN" name="177">  177   </a>  <b>}</b>
+</span><span><a class="LN" name="178">  178   </a>
+</span><span><a class="LN" name="179">  179   </a>  rtmSetTPtr(autoGenTest_M, &amp;autoGenTest_M-&gt;Timing.tArray[0]);
+</span><span><a class="LN" name="180">  180   </a>
+</span><span><a class="LN" name="181">  181   </a>  <b>{</b>
+</span><span><a class="LN" name="182">  182   </a>    int_T *mdlSampleHits = autoGenTest_M-&gt;Timing.sampleHitArray;
+</span><span><a class="LN" name="183">  183   </a>    mdlSampleHits[0] = 1;
+</span><span><a class="LN" name="184">  184   </a>    mdlSampleHits[1] = 1;
+</span><span><a class="LN" name="185">  185   </a>    autoGenTest_M-&gt;Timing.sampleHits = (&amp;mdlSampleHits[0]);
+</span><span><a class="LN" name="186">  186   </a>  <b>}</b>
+</span><span><a class="LN" name="187">  187   </a>
+</span><span><a class="LN" name="188">  188   </a>  rtmSetTFinal(autoGenTest_M, -1);
+</span><span><a class="LN" name="189">  189   </a>  autoGenTest_M-&gt;Timing.stepSize0 = 0.01;
+</span><span><a class="LN" name="190">  190   </a>  autoGenTest_M-&gt;Timing.stepSize1 = 0.01;
+</span><span><a class="LN" name="191">  191   </a>  autoGenTest_M-&gt;solverInfoPtr = (&amp;autoGenTest_M-&gt;solverInfo);
+</span><span><a class="LN" name="192">  192   </a>  autoGenTest_M-&gt;Timing.stepSize = (0.01);
+</span><span><a class="LN" name="193">  193   </a>  rtsiSetFixedStepSize(&amp;autoGenTest_M-&gt;solverInfo, 0.01);
+</span><span><a class="LN" name="194">  194   </a>  rtsiSetSolverMode(&amp;autoGenTest_M-&gt;solverInfo, SOLVER_MODE_SINGLETASKING);
+</span><span><a class="LN" name="195">  195   </a>
+</span><span><a class="LN" name="196">  196   </a>  <span class="CT">// block I/O</span>
+</span><span><a class="LN" name="197">  197   </a>  (<span class="DT">void</span>) memset(((<span class="DT">void</span> *) autoGenTest_B), 0,
+</span><span><a class="LN" name="198">  198   </a>                <span class="KW">sizeof</span>(<a href="autoGenTest_h.html#type_B_autoGenTest_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_B_autoGenTest_T');" target="_self"><font color="#1122aa">B_autoGenTest_T</font></a>));
+</span><span><a class="LN" name="199">  199   </a>
+</span><span><a class="LN" name="200">  200   </a>  <span class="CT">// states (dwork)</span>
+</span><span><a class="LN" name="201">  201   </a>  (<span class="DT">void</span>) memset((<span class="DT">void</span> *)autoGenTest_DW, 0,
+</span><span><a class="LN" name="202">  202   </a>                <span class="KW">sizeof</span>(<a href="autoGenTest_h.html#type_DW_autoGenTest_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_DW_autoGenTest_T');" target="_self"><font color="#1122aa">DW_autoGenTest_T</font></a>));
+</span><span><a class="LN" name="203">  203   </a>
+</span><span><a class="LN" name="204">  204   </a>  <span class="CT">// child S-Function registration</span>
+</span><span><a class="LN" name="205">  205   </a>  <b>{</b>
+</span><span><a class="LN" name="206">  206   </a>    RTWSfcnInfo *sfcnInfo = &amp;autoGenTest_M-&gt;NonInlinedSFcns.sfcnInfo;
+</span><span><a class="LN" name="207">  207   </a>    autoGenTest_M-&gt;sfcnInfo = (sfcnInfo);
+</span><span><a class="LN" name="208">  208   </a>    rtssSetErrorStatusPtr(sfcnInfo, ((<span class="DT">const</span> char_T **)(&amp;rtmGetErrorStatus
+</span><span><a class="LN" name="209">  209   </a>      (autoGenTest_M))));
+</span><span><a class="LN" name="210">  210   </a>    rtssSetNumRootSampTimesPtr(sfcnInfo, &amp;autoGenTest_M-&gt;Sizes.numSampTimes);
+</span><span><a class="LN" name="211">  211   </a>    autoGenTest_M-&gt;NonInlinedSFcns.taskTimePtrs[0] = &amp;(rtmGetTPtr(autoGenTest_M)
+</span><span><a class="LN" name="212">  212   </a>      [0]);
+</span><span><a class="LN" name="213">  213   </a>    autoGenTest_M-&gt;NonInlinedSFcns.taskTimePtrs[1] = &amp;(rtmGetTPtr(autoGenTest_M)
+</span><span><a class="LN" name="214">  214   </a>      [1]);
+</span><span><a class="LN" name="215">  215   </a>    rtssSetTPtrPtr(sfcnInfo,autoGenTest_M-&gt;NonInlinedSFcns.taskTimePtrs);
+</span><span><a class="LN" name="216">  216   </a>    rtssSetTStartPtr(sfcnInfo, &amp;rtmGetTStart(autoGenTest_M));
+</span><span><a class="LN" name="217">  217   </a>    rtssSetTFinalPtr(sfcnInfo, &amp;rtmGetTFinal(autoGenTest_M));
+</span><span><a class="LN" name="218">  218   </a>    rtssSetTimeOfLastOutputPtr(sfcnInfo, &amp;rtmGetTimeOfLastOutput(autoGenTest_M));
+</span><span><a class="LN" name="219">  219   </a>    rtssSetStepSizePtr(sfcnInfo, &amp;autoGenTest_M-&gt;Timing.stepSize);
+</span><span><a class="LN" name="220">  220   </a>    rtssSetStopRequestedPtr(sfcnInfo, &amp;rtmGetStopRequested(autoGenTest_M));
+</span><span><a class="LN" name="221">  221   </a>    rtssSetDerivCacheNeedsResetPtr(sfcnInfo,
+</span><span><a class="LN" name="222">  222   </a>      &amp;autoGenTest_M-&gt;ModelData.derivCacheNeedsReset);
+</span><span><a class="LN" name="223">  223   </a>    rtssSetZCCacheNeedsResetPtr(sfcnInfo,
+</span><span><a class="LN" name="224">  224   </a>      &amp;autoGenTest_M-&gt;ModelData.zCCacheNeedsReset);
+</span><span><a class="LN" name="225">  225   </a>    rtssSetBlkStateChangePtr(sfcnInfo, &amp;autoGenTest_M-&gt;ModelData.blkStateChange);
+</span><span><a class="LN" name="226">  226   </a>    rtssSetSampleHitsPtr(sfcnInfo, &amp;autoGenTest_M-&gt;Timing.sampleHits);
+</span><span><a class="LN" name="227">  227   </a>    rtssSetPerTaskSampleHitsPtr(sfcnInfo,
+</span><span><a class="LN" name="228">  228   </a>      &amp;autoGenTest_M-&gt;Timing.perTaskSampleHits);
+</span><span><a class="LN" name="229">  229   </a>    rtssSetSimModePtr(sfcnInfo, &amp;autoGenTest_M-&gt;simMode);
+</span><span><a class="LN" name="230">  230   </a>    rtssSetSolverInfoPtr(sfcnInfo, &amp;autoGenTest_M-&gt;solverInfoPtr);
+</span><span><a class="LN" name="231">  231   </a>  <b>}</b>
+</span><span><a class="LN" name="232">  232   </a>
+</span><span><a class="LN" name="233">  233   </a>  autoGenTest_M-&gt;Sizes.numSFcns = (3);
+</span><span><a class="LN" name="234">  234   </a>
+</span><span><a class="LN" name="235">  235   </a>  <span class="CT">// register each child</span>
+</span><span><a class="LN" name="236">  236   </a>  <b>{</b>
+</span><span><a class="LN" name="237">  237   </a>    (<span class="DT">void</span>) memset((<span class="DT">void</span> *)&amp;autoGenTest_M-&gt;NonInlinedSFcns.childSFunctions[0], 0,
+</span><span><a class="LN" name="238">  238   </a>                  3*<span class="KW">sizeof</span>(SimStruct));
+</span><span><a class="LN" name="239">  239   </a>    autoGenTest_M-&gt;childSfunctions =
+</span><span><a class="LN" name="240">  240   </a>      (&amp;autoGenTest_M-&gt;NonInlinedSFcns.childSFunctionPtrs[0]);
+</span><span><a class="LN" name="241">  241   </a>    autoGenTest_M-&gt;childSfunctions[0] =
+</span><span><a class="LN" name="242">  242   </a>      (&amp;autoGenTest_M-&gt;NonInlinedSFcns.childSFunctions[0]);
+</span><span><a class="LN" name="243">  243   </a>    autoGenTest_M-&gt;childSfunctions[1] =
+</span><span><a class="LN" name="244">  244   </a>      (&amp;autoGenTest_M-&gt;NonInlinedSFcns.childSFunctions[1]);
+</span><span><a class="LN" name="245">  245   </a>    autoGenTest_M-&gt;childSfunctions[2] =
+</span><span><a class="LN" name="246">  246   </a>      (&amp;autoGenTest_M-&gt;NonInlinedSFcns.childSFunctions[2]);
+</span><span><a class="LN" name="247">  247   </a>
+</span><span><a class="LN" name="248">  248   </a>    <span class="CT">// Level2 S-Function Block: autoGenTest/&lt;Root&gt;/Simulator Synchronizer (WBToolbox) </span>
+</span><span><a class="LN" name="249">  249   </a>    <b>{</b>
+</span><span><a class="LN" name="250">  250   </a>      SimStruct *rts = autoGenTest_M-&gt;childSfunctions[0];
+</span><span><a class="LN" name="251">  251   </a>
+</span><span><a class="LN" name="252">  252   </a>      <span class="CT">// timing info</span>
+</span><span><a class="LN" name="253">  253   </a>      time_T *sfcnPeriod = autoGenTest_M-&gt;NonInlinedSFcns.Sfcn0.sfcnPeriod;
+</span><span><a class="LN" name="254">  254   </a>      time_T *sfcnOffset = autoGenTest_M-&gt;NonInlinedSFcns.Sfcn0.sfcnOffset;
+</span><span><a class="LN" name="255">  255   </a>      int_T *sfcnTsMap = autoGenTest_M-&gt;NonInlinedSFcns.Sfcn0.sfcnTsMap;
+</span><span><a class="LN" name="256">  256   </a>      (<span class="DT">void</span>) memset((<span class="DT">void</span>*)sfcnPeriod, 0,
+</span><span><a class="LN" name="257">  257   </a>                    <span class="KW">sizeof</span>(time_T)*1);
+</span><span><a class="LN" name="258">  258   </a>      (<span class="DT">void</span>) memset((<span class="DT">void</span>*)sfcnOffset, 0,
+</span><span><a class="LN" name="259">  259   </a>                    <span class="KW">sizeof</span>(time_T)*1);
+</span><span><a class="LN" name="260">  260   </a>      ssSetSampleTimePtr(rts, &amp;sfcnPeriod[0]);
+</span><span><a class="LN" name="261">  261   </a>      ssSetOffsetTimePtr(rts, &amp;sfcnOffset[0]);
+</span><span><a class="LN" name="262">  262   </a>      ssSetSampleTimeTaskIDPtr(rts, sfcnTsMap);
+</span><span><a class="LN" name="263">  263   </a>
+</span><span><a class="LN" name="264">  264   </a>      <span class="CT">// Set up the mdlInfo pointer</span>
+</span><span><a class="LN" name="265">  265   </a>      <b>{</b>
+</span><span><a class="LN" name="266">  266   </a>        ssSetBlkInfo2Ptr(rts, &amp;autoGenTest_M-&gt;NonInlinedSFcns.blkInfo2[0]);
+</span><span><a class="LN" name="267">  267   </a>      <b>}</b>
+</span><span><a class="LN" name="268">  268   </a>
+</span><span><a class="LN" name="269">  269   </a>      ssSetRTWSfcnInfo(rts, autoGenTest_M-&gt;sfcnInfo);
+</span><span><a class="LN" name="270">  270   </a>
+</span><span><a class="LN" name="271">  271   </a>      <span class="CT">// Allocate memory of model methods 2</span>
+</span><span><a class="LN" name="272">  272   </a>      <b>{</b>
+</span><span><a class="LN" name="273">  273   </a>        ssSetModelMethods2(rts, &amp;autoGenTest_M-&gt;NonInlinedSFcns.methods2[0]);
+</span><span><a class="LN" name="274">  274   </a>      <b>}</b>
+</span><span><a class="LN" name="275">  275   </a>
+</span><span><a class="LN" name="276">  276   </a>      <span class="CT">// Allocate memory of model methods 3</span>
+</span><span><a class="LN" name="277">  277   </a>      <b>{</b>
+</span><span><a class="LN" name="278">  278   </a>        ssSetModelMethods3(rts, &amp;autoGenTest_M-&gt;NonInlinedSFcns.methods3[0]);
+</span><span><a class="LN" name="279">  279   </a>      <b>}</b>
+</span><span><a class="LN" name="280">  280   </a>
+</span><span><a class="LN" name="281">  281   </a>      <span class="CT">// Allocate memory for states auxilliary information</span>
+</span><span><a class="LN" name="282">  282   </a>      <b>{</b>
+</span><span><a class="LN" name="283">  283   </a>        ssSetStatesInfo2(rts, &amp;autoGenTest_M-&gt;NonInlinedSFcns.statesInfo2[0]);
+</span><span><a class="LN" name="284">  284   </a>      <b>}</b>
+</span><span><a class="LN" name="285">  285   </a>
+</span><span><a class="LN" name="286">  286   </a>      <span class="CT">// path info</span>
+</span><span><a class="LN" name="287">  287   </a>      ssSetModelName(rts, <font color="#1122ff">&quot;Simulator Synchronizer&quot;</font>);
+</span><span><a class="LN" name="288">  288   </a>      ssSetPath(rts, <font color="#1122ff">&quot;autoGenTest/Simulator Synchronizer&quot;</font>);
+</span><span><a class="LN" name="289">  289   </a>      ssSetRTModel(rts,autoGenTest_M);
+</span><span><a class="LN" name="290">  290   </a>      ssSetParentSS(rts, (NULL));
+</span><span><a class="LN" name="291">  291   </a>      ssSetRootSS(rts, rts);
+</span><span><a class="LN" name="292">  292   </a>      ssSetVersion(rts, SIMSTRUCT_VERSION_LEVEL2);
+</span><span><a class="LN" name="293">  293   </a>
+</span><span><a class="LN" name="294">  294   </a>      <span class="CT">// parameters</span>
+</span><span><a class="LN" name="295">  295   </a>      <b>{</b>
+</span><span><a class="LN" name="296">  296   </a>        <a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a> **sfcnParams = (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a> **)
+</span><span><a class="LN" name="297">  297   </a>          &amp;autoGenTest_M-&gt;NonInlinedSFcns.Sfcn0.params;
+</span><span><a class="LN" name="298">  298   </a>        ssSetSFcnParamsCount(rts, 4);
+</span><span><a class="LN" name="299">  299   </a>        ssSetSFcnParamsPtr(rts, &amp;sfcnParams[0]);
+</span><span><a class="LN" name="300">  300   </a>        ssSetSFcnParam(rts, 0, (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a>*)
+</span><span><a class="LN" name="301">  301   </a>                       autoGenTest_P-&gt;SimulatorSynchronizer_P1_Size);
+</span><span><a class="LN" name="302">  302   </a>        ssSetSFcnParam(rts, 1, (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a>*)
+</span><span><a class="LN" name="303">  303   </a>                       autoGenTest_P-&gt;SimulatorSynchronizer_P2_Size);
+</span><span><a class="LN" name="304">  304   </a>        ssSetSFcnParam(rts, 2, (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a>*)
+</span><span><a class="LN" name="305">  305   </a>                       autoGenTest_P-&gt;SimulatorSynchronizer_P3_Size);
+</span><span><a class="LN" name="306">  306   </a>        ssSetSFcnParam(rts, 3, (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a>*)
+</span><span><a class="LN" name="307">  307   </a>                       autoGenTest_P-&gt;SimulatorSynchronizer_P4_Size);
+</span><span><a class="LN" name="308">  308   </a>      <b>}</b>
+</span><span><a class="LN" name="309">  309   </a>
+</span><span><a class="LN" name="310">  310   </a>      <span class="CT">// work vectors</span>
+</span><span><a class="LN" name="311">  311   </a>      ssSetPWork(rts, (<span class="DT">void</span> **) &amp;autoGenTest_DW-&gt;SimulatorSynchronizer_PWORK);
+</span><span><a class="LN" name="312">  312   </a>
+</span><span><a class="LN" name="313">  313   </a>      <b>{</b>
+</span><span><a class="LN" name="314">  314   </a>        <span class="KW">struct</span> _ssDWorkRecord *dWorkRecord = (<span class="KW">struct</span> _ssDWorkRecord *)
+</span><span><a class="LN" name="315">  315   </a>          &amp;autoGenTest_M-&gt;NonInlinedSFcns.Sfcn0.dWork;
+</span><span><a class="LN" name="316">  316   </a>        <span class="KW">struct</span> _ssDWorkAuxRecord *dWorkAuxRecord = (<span class="KW">struct</span> _ssDWorkAuxRecord *)
+</span><span><a class="LN" name="317">  317   </a>          &amp;autoGenTest_M-&gt;NonInlinedSFcns.Sfcn0.dWorkAux;
+</span><span><a class="LN" name="318">  318   </a>        ssSetSFcnDWork(rts, dWorkRecord);
+</span><span><a class="LN" name="319">  319   </a>        ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
+</span><span><a class="LN" name="320">  320   </a>        _ssSetNumDWork(rts, 1);
+</span><span><a class="LN" name="321">  321   </a>
+</span><span><a class="LN" name="322">  322   </a>        <span class="CT">// PWORK</span>
+</span><span><a class="LN" name="323">  323   </a>        ssSetDWorkWidth(rts, 0, 1);
+</span><span><a class="LN" name="324">  324   </a>        ssSetDWorkDataType(rts, 0,SS_POINTER);
+</span><span><a class="LN" name="325">  325   </a>        ssSetDWorkComplexSignal(rts, 0, 0);
+</span><span><a class="LN" name="326">  326   </a>        ssSetDWork(rts, 0, &amp;autoGenTest_DW-&gt;SimulatorSynchronizer_PWORK);
+</span><span><a class="LN" name="327">  327   </a>      <b>}</b>
+</span><span><a class="LN" name="328">  328   </a>
+</span><span><a class="LN" name="329">  329   </a>      <span class="CT">// registration</span>
+</span><span><a class="LN" name="330">  330   </a>      WBToolbox(rts);
+</span><span><a class="LN" name="331">  331   </a>      sfcnInitializeSizes(rts);
+</span><span><a class="LN" name="332">  332   </a>      sfcnInitializeSampleTimes(rts);
+</span><span><a class="LN" name="333">  333   </a>
+</span><span><a class="LN" name="334">  334   </a>      <span class="CT">// adjust sample time</span>
+</span><span><a class="LN" name="335">  335   </a>      ssSetSampleTime(rts, 0, 0.01);
+</span><span><a class="LN" name="336">  336   </a>      ssSetOffsetTime(rts, 0, 0.0);
+</span><span><a class="LN" name="337">  337   </a>      sfcnTsMap[0] = 1;
+</span><span><a class="LN" name="338">  338   </a>
+</span><span><a class="LN" name="339">  339   </a>      <span class="CT">// set compiled values of dynamic vector attributes</span>
+</span><span><a class="LN" name="340">  340   </a>      ssSetNumNonsampledZCs(rts, 0);
+</span><span><a class="LN" name="341">  341   </a>
+</span><span><a class="LN" name="342">  342   </a>      <span class="CT">// Update connectivity flags for each port</span>
+</span><span><a class="LN" name="343">  343   </a>      <span class="CT">// Update the BufferDstPort flags for each input port</span>
+</span><span><a class="LN" name="344">  344   </a>    <b>}</b>
+</span><span><a class="LN" name="345">  345   </a>
+</span><span><a class="LN" name="346">  346   </a>    <span class="CT">// Level2 S-Function Block: autoGenTest/&lt;S1&gt;/S-Function (WBToolbox)</span>
+</span><span><a class="LN" name="347">  347   </a>    <b>{</b>
+</span><span><a class="LN" name="348">  348   </a>      SimStruct *rts = autoGenTest_M-&gt;childSfunctions[1];
+</span><span><a class="LN" name="349">  349   </a>
+</span><span><a class="LN" name="350">  350   </a>      <span class="CT">// timing info</span>
+</span><span><a class="LN" name="351">  351   </a>      time_T *sfcnPeriod = autoGenTest_M-&gt;NonInlinedSFcns.Sfcn1.sfcnPeriod;
+</span><span><a class="LN" name="352">  352   </a>      time_T *sfcnOffset = autoGenTest_M-&gt;NonInlinedSFcns.Sfcn1.sfcnOffset;
+</span><span><a class="LN" name="353">  353   </a>      int_T *sfcnTsMap = autoGenTest_M-&gt;NonInlinedSFcns.Sfcn1.sfcnTsMap;
+</span><span><a class="LN" name="354">  354   </a>      (<span class="DT">void</span>) memset((<span class="DT">void</span>*)sfcnPeriod, 0,
+</span><span><a class="LN" name="355">  355   </a>                    <span class="KW">sizeof</span>(time_T)*1);
+</span><span><a class="LN" name="356">  356   </a>      (<span class="DT">void</span>) memset((<span class="DT">void</span>*)sfcnOffset, 0,
+</span><span><a class="LN" name="357">  357   </a>                    <span class="KW">sizeof</span>(time_T)*1);
+</span><span><a class="LN" name="358">  358   </a>      ssSetSampleTimePtr(rts, &amp;sfcnPeriod[0]);
+</span><span><a class="LN" name="359">  359   </a>      ssSetOffsetTimePtr(rts, &amp;sfcnOffset[0]);
+</span><span><a class="LN" name="360">  360   </a>      ssSetSampleTimeTaskIDPtr(rts, sfcnTsMap);
+</span><span><a class="LN" name="361">  361   </a>
+</span><span><a class="LN" name="362">  362   </a>      <span class="CT">// Set up the mdlInfo pointer</span>
+</span><span><a class="LN" name="363">  363   </a>      <b>{</b>
+</span><span><a class="LN" name="364">  364   </a>        ssSetBlkInfo2Ptr(rts, &amp;autoGenTest_M-&gt;NonInlinedSFcns.blkInfo2[1]);
+</span><span><a class="LN" name="365">  365   </a>      <b>}</b>
+</span><span><a class="LN" name="366">  366   </a>
+</span><span><a class="LN" name="367">  367   </a>      ssSetRTWSfcnInfo(rts, autoGenTest_M-&gt;sfcnInfo);
+</span><span><a class="LN" name="368">  368   </a>
+</span><span><a class="LN" name="369">  369   </a>      <span class="CT">// Allocate memory of model methods 2</span>
+</span><span><a class="LN" name="370">  370   </a>      <b>{</b>
+</span><span><a class="LN" name="371">  371   </a>        ssSetModelMethods2(rts, &amp;autoGenTest_M-&gt;NonInlinedSFcns.methods2[1]);
+</span><span><a class="LN" name="372">  372   </a>      <b>}</b>
+</span><span><a class="LN" name="373">  373   </a>
+</span><span><a class="LN" name="374">  374   </a>      <span class="CT">// Allocate memory of model methods 3</span>
+</span><span><a class="LN" name="375">  375   </a>      <b>{</b>
+</span><span><a class="LN" name="376">  376   </a>        ssSetModelMethods3(rts, &amp;autoGenTest_M-&gt;NonInlinedSFcns.methods3[1]);
+</span><span><a class="LN" name="377">  377   </a>      <b>}</b>
+</span><span><a class="LN" name="378">  378   </a>
+</span><span><a class="LN" name="379">  379   </a>      <span class="CT">// Allocate memory for states auxilliary information</span>
+</span><span><a class="LN" name="380">  380   </a>      <b>{</b>
+</span><span><a class="LN" name="381">  381   </a>        ssSetStatesInfo2(rts, &amp;autoGenTest_M-&gt;NonInlinedSFcns.statesInfo2[1]);
+</span><span><a class="LN" name="382">  382   </a>      <b>}</b>
+</span><span><a class="LN" name="383">  383   </a>
+</span><span><a class="LN" name="384">  384   </a>      <span class="CT">// outputs</span>
+</span><span><a class="LN" name="385">  385   </a>      <b>{</b>
+</span><span><a class="LN" name="386">  386   </a>        ssSetPortInfoForOutputs(rts,
+</span><span><a class="LN" name="387">  387   </a>          &amp;autoGenTest_M-&gt;NonInlinedSFcns.Sfcn1.outputPortInfo[0]);
+</span><span><a class="LN" name="388">  388   </a>        _ssSetNumOutputPorts(rts, 1);
+</span><span><a class="LN" name="389">  389   </a>
+</span><span><a class="LN" name="390">  390   </a>        <span class="CT">// port 0</span>
+</span><span><a class="LN" name="391">  391   </a>        <b>{</b>
+</span><span><a class="LN" name="392">  392   </a>          _ssSetOutputPortNumDimensions(rts, 0, 1);
+</span><span><a class="LN" name="393">  393   </a>          ssSetOutputPortWidth(rts, 0, 23);
+</span><span><a class="LN" name="394">  394   </a>          ssSetOutputPortSignal(rts, 0, ((real_T *) autoGenTest_B-&gt;SFunction));
+</span><span><a class="LN" name="395">  395   </a>        <b>}</b>
+</span><span><a class="LN" name="396">  396   </a>      <b>}</b>
+</span><span><a class="LN" name="397">  397   </a>
+</span><span><a class="LN" name="398">  398   </a>      <span class="CT">// path info</span>
+</span><span><a class="LN" name="399">  399   </a>      ssSetModelName(rts, <font color="#1122ff">&quot;S-Function&quot;</font>);
+</span><span><a class="LN" name="400">  400   </a>      ssSetPath(rts, <font color="#1122ff">&quot;autoGenTest/Get Estimate/S-Function&quot;</font>);
+</span><span><a class="LN" name="401">  401   </a>      ssSetRTModel(rts,autoGenTest_M);
+</span><span><a class="LN" name="402">  402   </a>      ssSetParentSS(rts, (NULL));
+</span><span><a class="LN" name="403">  403   </a>      ssSetRootSS(rts, rts);
+</span><span><a class="LN" name="404">  404   </a>      ssSetVersion(rts, SIMSTRUCT_VERSION_LEVEL2);
+</span><span><a class="LN" name="405">  405   </a>
+</span><span><a class="LN" name="406">  406   </a>      <span class="CT">// parameters</span>
+</span><span><a class="LN" name="407">  407   </a>      <b>{</b>
+</span><span><a class="LN" name="408">  408   </a>        <a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a> **sfcnParams = (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a> **)
+</span><span><a class="LN" name="409">  409   </a>          &amp;autoGenTest_M-&gt;NonInlinedSFcns.Sfcn1.params;
+</span><span><a class="LN" name="410">  410   </a>        ssSetSFcnParamsCount(rts, 6);
+</span><span><a class="LN" name="411">  411   </a>        ssSetSFcnParamsPtr(rts, &amp;sfcnParams[0]);
+</span><span><a class="LN" name="412">  412   </a>        ssSetSFcnParam(rts, 0, (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a>*)autoGenTest_P-&gt;SFunction_P1_Size);
+</span><span><a class="LN" name="413">  413   </a>        ssSetSFcnParam(rts, 1, (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a>*)autoGenTest_P-&gt;SFunction_P2_Size);
+</span><span><a class="LN" name="414">  414   </a>        ssSetSFcnParam(rts, 2, (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a>*)autoGenTest_P-&gt;SFunction_P3_Size);
+</span><span><a class="LN" name="415">  415   </a>        ssSetSFcnParam(rts, 3, (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a>*)autoGenTest_P-&gt;SFunction_P4_Size);
+</span><span><a class="LN" name="416">  416   </a>        ssSetSFcnParam(rts, 4, (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a>*)autoGenTest_P-&gt;SFunction_P5_Size);
+</span><span><a class="LN" name="417">  417   </a>        ssSetSFcnParam(rts, 5, (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a>*)autoGenTest_P-&gt;SFunction_P6_Size);
+</span><span><a class="LN" name="418">  418   </a>      <b>}</b>
+</span><span><a class="LN" name="419">  419   </a>
+</span><span><a class="LN" name="420">  420   </a>      <span class="CT">// work vectors</span>
+</span><span><a class="LN" name="421">  421   </a>      ssSetPWork(rts, (<span class="DT">void</span> **) &amp;autoGenTest_DW-&gt;SFunction_PWORK);
+</span><span><a class="LN" name="422">  422   </a>
+</span><span><a class="LN" name="423">  423   </a>      <b>{</b>
+</span><span><a class="LN" name="424">  424   </a>        <span class="KW">struct</span> _ssDWorkRecord *dWorkRecord = (<span class="KW">struct</span> _ssDWorkRecord *)
+</span><span><a class="LN" name="425">  425   </a>          &amp;autoGenTest_M-&gt;NonInlinedSFcns.Sfcn1.dWork;
+</span><span><a class="LN" name="426">  426   </a>        <span class="KW">struct</span> _ssDWorkAuxRecord *dWorkAuxRecord = (<span class="KW">struct</span> _ssDWorkAuxRecord *)
+</span><span><a class="LN" name="427">  427   </a>          &amp;autoGenTest_M-&gt;NonInlinedSFcns.Sfcn1.dWorkAux;
+</span><span><a class="LN" name="428">  428   </a>        ssSetSFcnDWork(rts, dWorkRecord);
+</span><span><a class="LN" name="429">  429   </a>        ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
+</span><span><a class="LN" name="430">  430   </a>        _ssSetNumDWork(rts, 1);
+</span><span><a class="LN" name="431">  431   </a>
+</span><span><a class="LN" name="432">  432   </a>        <span class="CT">// PWORK</span>
+</span><span><a class="LN" name="433">  433   </a>        ssSetDWorkWidth(rts, 0, 1);
+</span><span><a class="LN" name="434">  434   </a>        ssSetDWorkDataType(rts, 0,SS_POINTER);
+</span><span><a class="LN" name="435">  435   </a>        ssSetDWorkComplexSignal(rts, 0, 0);
+</span><span><a class="LN" name="436">  436   </a>        ssSetDWork(rts, 0, &amp;autoGenTest_DW-&gt;SFunction_PWORK);
+</span><span><a class="LN" name="437">  437   </a>      <b>}</b>
+</span><span><a class="LN" name="438">  438   </a>
+</span><span><a class="LN" name="439">  439   </a>      <span class="CT">// registration</span>
+</span><span><a class="LN" name="440">  440   </a>      WBToolbox(rts);
+</span><span><a class="LN" name="441">  441   </a>      sfcnInitializeSizes(rts);
+</span><span><a class="LN" name="442">  442   </a>      sfcnInitializeSampleTimes(rts);
+</span><span><a class="LN" name="443">  443   </a>
+</span><span><a class="LN" name="444">  444   </a>      <span class="CT">// adjust sample time</span>
+</span><span><a class="LN" name="445">  445   </a>      ssSetSampleTime(rts, 0, 0.0);
+</span><span><a class="LN" name="446">  446   </a>      ssSetOffsetTime(rts, 0, 0.0);
+</span><span><a class="LN" name="447">  447   </a>      sfcnTsMap[0] = 0;
+</span><span><a class="LN" name="448">  448   </a>
+</span><span><a class="LN" name="449">  449   </a>      <span class="CT">// set compiled values of dynamic vector attributes</span>
+</span><span><a class="LN" name="450">  450   </a>      ssSetNumNonsampledZCs(rts, 0);
+</span><span><a class="LN" name="451">  451   </a>
+</span><span><a class="LN" name="452">  452   </a>      <span class="CT">// Update connectivity flags for each port</span>
+</span><span><a class="LN" name="453">  453   </a>      _ssSetOutputPortConnected(rts, 0, 1);
+</span><span><a class="LN" name="454">  454   </a>      _ssSetOutputPortBeingMerged(rts, 0, 0);
+</span><span><a class="LN" name="455">  455   </a>
+</span><span><a class="LN" name="456">  456   </a>      <span class="CT">// Update the BufferDstPort flags for each input port</span>
+</span><span><a class="LN" name="457">  457   </a>    <b>}</b>
+</span><span><a class="LN" name="458">  458   </a>
+</span><span><a class="LN" name="459">  459   </a>    <span class="CT">// Level2 S-Function Block: autoGenTest/&lt;S2&gt;/S-Function (WBToolbox)</span>
+</span><span><a class="LN" name="460">  460   </a>    <b>{</b>
+</span><span><a class="LN" name="461">  461   </a>      SimStruct *rts = autoGenTest_M-&gt;childSfunctions[2];
+</span><span><a class="LN" name="462">  462   </a>
+</span><span><a class="LN" name="463">  463   </a>      <span class="CT">// timing info</span>
+</span><span><a class="LN" name="464">  464   </a>      time_T *sfcnPeriod = autoGenTest_M-&gt;NonInlinedSFcns.Sfcn2.sfcnPeriod;
+</span><span><a class="LN" name="465">  465   </a>      time_T *sfcnOffset = autoGenTest_M-&gt;NonInlinedSFcns.Sfcn2.sfcnOffset;
+</span><span><a class="LN" name="466">  466   </a>      int_T *sfcnTsMap = autoGenTest_M-&gt;NonInlinedSFcns.Sfcn2.sfcnTsMap;
+</span><span><a class="LN" name="467">  467   </a>      (<span class="DT">void</span>) memset((<span class="DT">void</span>*)sfcnPeriod, 0,
+</span><span><a class="LN" name="468">  468   </a>                    <span class="KW">sizeof</span>(time_T)*1);
+</span><span><a class="LN" name="469">  469   </a>      (<span class="DT">void</span>) memset((<span class="DT">void</span>*)sfcnOffset, 0,
+</span><span><a class="LN" name="470">  470   </a>                    <span class="KW">sizeof</span>(time_T)*1);
+</span><span><a class="LN" name="471">  471   </a>      ssSetSampleTimePtr(rts, &amp;sfcnPeriod[0]);
+</span><span><a class="LN" name="472">  472   </a>      ssSetOffsetTimePtr(rts, &amp;sfcnOffset[0]);
+</span><span><a class="LN" name="473">  473   </a>      ssSetSampleTimeTaskIDPtr(rts, sfcnTsMap);
+</span><span><a class="LN" name="474">  474   </a>
+</span><span><a class="LN" name="475">  475   </a>      <span class="CT">// Set up the mdlInfo pointer</span>
+</span><span><a class="LN" name="476">  476   </a>      <b>{</b>
+</span><span><a class="LN" name="477">  477   </a>        ssSetBlkInfo2Ptr(rts, &amp;autoGenTest_M-&gt;NonInlinedSFcns.blkInfo2[2]);
+</span><span><a class="LN" name="478">  478   </a>      <b>}</b>
+</span><span><a class="LN" name="479">  479   </a>
+</span><span><a class="LN" name="480">  480   </a>      ssSetRTWSfcnInfo(rts, autoGenTest_M-&gt;sfcnInfo);
+</span><span><a class="LN" name="481">  481   </a>
+</span><span><a class="LN" name="482">  482   </a>      <span class="CT">// Allocate memory of model methods 2</span>
+</span><span><a class="LN" name="483">  483   </a>      <b>{</b>
+</span><span><a class="LN" name="484">  484   </a>        ssSetModelMethods2(rts, &amp;autoGenTest_M-&gt;NonInlinedSFcns.methods2[2]);
+</span><span><a class="LN" name="485">  485   </a>      <b>}</b>
+</span><span><a class="LN" name="486">  486   </a>
+</span><span><a class="LN" name="487">  487   </a>      <span class="CT">// Allocate memory of model methods 3</span>
+</span><span><a class="LN" name="488">  488   </a>      <b>{</b>
+</span><span><a class="LN" name="489">  489   </a>        ssSetModelMethods3(rts, &amp;autoGenTest_M-&gt;NonInlinedSFcns.methods3[2]);
+</span><span><a class="LN" name="490">  490   </a>      <b>}</b>
+</span><span><a class="LN" name="491">  491   </a>
+</span><span><a class="LN" name="492">  492   </a>      <span class="CT">// Allocate memory for states auxilliary information</span>
+</span><span><a class="LN" name="493">  493   </a>      <b>{</b>
+</span><span><a class="LN" name="494">  494   </a>        ssSetStatesInfo2(rts, &amp;autoGenTest_M-&gt;NonInlinedSFcns.statesInfo2[2]);
+</span><span><a class="LN" name="495">  495   </a>      <b>}</b>
+</span><span><a class="LN" name="496">  496   </a>
+</span><span><a class="LN" name="497">  497   </a>      <span class="CT">// inputs</span>
+</span><span><a class="LN" name="498">  498   </a>      <b>{</b>
+</span><span><a class="LN" name="499">  499   </a>        _ssSetNumInputPorts(rts, 1);
+</span><span><a class="LN" name="500">  500   </a>        ssSetPortInfoForInputs(rts,
+</span><span><a class="LN" name="501">  501   </a>          &amp;autoGenTest_M-&gt;NonInlinedSFcns.Sfcn2.inputPortInfo[0]);
+</span><span><a class="LN" name="502">  502   </a>
+</span><span><a class="LN" name="503">  503   </a>        <span class="CT">// port 0</span>
+</span><span><a class="LN" name="504">  504   </a>        <b>{</b>
+</span><span><a class="LN" name="505">  505   </a>          real_T <span class="DT">const</span> **sfcnUPtrs = (real_T <span class="DT">const</span> **)
+</span><span><a class="LN" name="506">  506   </a>            &amp;autoGenTest_M-&gt;NonInlinedSFcns.Sfcn2.UPtrs0;
+</span><span><a class="LN" name="507">  507   </a>
+</span><span><a class="LN" name="508">  508   </a>          <b>{</b>
+</span><span><a class="LN" name="509">  509   </a>            int_T i1;
+</span><span><a class="LN" name="510">  510   </a>            <span class="DT">const</span> real_T *u0 = autoGenTest_B-&gt;Sum;
+</span><span><a class="LN" name="511">  511   </a>            <span class="KW">for</span> (i1=0; i1 &lt; 23; i1++) <b>{</b>
+</span><span><a class="LN" name="512">  512   </a>              sfcnUPtrs[i1] = &amp;u0[i1];
+</span><span><a class="LN" name="513">  513   </a>            <b>}</b>
+</span><span><a class="LN" name="514">  514   </a>          <b>}</b>
+</span><span><a class="LN" name="515">  515   </a>
+</span><span><a class="LN" name="516">  516   </a>          ssSetInputPortSignalPtrs(rts, 0, (InputPtrsType)&amp;sfcnUPtrs[0]);
+</span><span><a class="LN" name="517">  517   </a>          _ssSetInputPortNumDimensions(rts, 0, 1);
+</span><span><a class="LN" name="518">  518   </a>          ssSetInputPortWidth(rts, 0, 23);
+</span><span><a class="LN" name="519">  519   </a>        <b>}</b>
+</span><span><a class="LN" name="520">  520   </a>      <b>}</b>
+</span><span><a class="LN" name="521">  521   </a>
+</span><span><a class="LN" name="522">  522   </a>      <span class="CT">// path info</span>
+</span><span><a class="LN" name="523">  523   </a>      ssSetModelName(rts, <font color="#1122ff">&quot;S-Function&quot;</font>);
+</span><span><a class="LN" name="524">  524   </a>      ssSetPath(rts, <font color="#1122ff">&quot;autoGenTest/Set References/S-Function&quot;</font>);
+</span><span><a class="LN" name="525">  525   </a>      ssSetRTModel(rts,autoGenTest_M);
+</span><span><a class="LN" name="526">  526   </a>      ssSetParentSS(rts, (NULL));
+</span><span><a class="LN" name="527">  527   </a>      ssSetRootSS(rts, rts);
+</span><span><a class="LN" name="528">  528   </a>      ssSetVersion(rts, SIMSTRUCT_VERSION_LEVEL2);
+</span><span><a class="LN" name="529">  529   </a>
+</span><span><a class="LN" name="530">  530   </a>      <span class="CT">// parameters</span>
+</span><span><a class="LN" name="531">  531   </a>      <b>{</b>
+</span><span><a class="LN" name="532">  532   </a>        <a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a> **sfcnParams = (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a> **)
+</span><span><a class="LN" name="533">  533   </a>          &amp;autoGenTest_M-&gt;NonInlinedSFcns.Sfcn2.params;
+</span><span><a class="LN" name="534">  534   </a>        ssSetSFcnParamsCount(rts, 8);
+</span><span><a class="LN" name="535">  535   </a>        ssSetSFcnParamsPtr(rts, &amp;sfcnParams[0]);
+</span><span><a class="LN" name="536">  536   </a>        ssSetSFcnParam(rts, 0, (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a>*)autoGenTest_P-&gt;SFunction_P1_Size_h);
+</span><span><a class="LN" name="537">  537   </a>        ssSetSFcnParam(rts, 1, (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a>*)autoGenTest_P-&gt;SFunction_P2_Size_j);
+</span><span><a class="LN" name="538">  538   </a>        ssSetSFcnParam(rts, 2, (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a>*)autoGenTest_P-&gt;SFunction_P3_Size_o);
+</span><span><a class="LN" name="539">  539   </a>        ssSetSFcnParam(rts, 3, (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a>*)autoGenTest_P-&gt;SFunction_P4_Size_c);
+</span><span><a class="LN" name="540">  540   </a>        ssSetSFcnParam(rts, 4, (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a>*)autoGenTest_P-&gt;SFunction_P5_Size_g);
+</span><span><a class="LN" name="541">  541   </a>        ssSetSFcnParam(rts, 5, (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a>*)autoGenTest_P-&gt;SFunction_P6_Size_n);
+</span><span><a class="LN" name="542">  542   </a>        ssSetSFcnParam(rts, 6, (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a>*)autoGenTest_P-&gt;SFunction_P7_Size);
+</span><span><a class="LN" name="543">  543   </a>        ssSetSFcnParam(rts, 7, (<a href="rt_matrx_c.html#type_mxArray" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_mxArray');" target="_self"><font color="#1122aa">mxArray</font></a>*)autoGenTest_P-&gt;SFunction_P8_Size);
+</span><span><a class="LN" name="544">  544   </a>      <b>}</b>
+</span><span><a class="LN" name="545">  545   </a>
+</span><span><a class="LN" name="546">  546   </a>      <span class="CT">// work vectors</span>
+</span><span><a class="LN" name="547">  547   </a>      ssSetPWork(rts, (<span class="DT">void</span> **) &amp;autoGenTest_DW-&gt;SFunction_PWORK_b);
+</span><span><a class="LN" name="548">  548   </a>
+</span><span><a class="LN" name="549">  549   </a>      <b>{</b>
+</span><span><a class="LN" name="550">  550   </a>        <span class="KW">struct</span> _ssDWorkRecord *dWorkRecord = (<span class="KW">struct</span> _ssDWorkRecord *)
+</span><span><a class="LN" name="551">  551   </a>          &amp;autoGenTest_M-&gt;NonInlinedSFcns.Sfcn2.dWork;
+</span><span><a class="LN" name="552">  552   </a>        <span class="KW">struct</span> _ssDWorkAuxRecord *dWorkAuxRecord = (<span class="KW">struct</span> _ssDWorkAuxRecord *)
+</span><span><a class="LN" name="553">  553   </a>          &amp;autoGenTest_M-&gt;NonInlinedSFcns.Sfcn2.dWorkAux;
+</span><span><a class="LN" name="554">  554   </a>        ssSetSFcnDWork(rts, dWorkRecord);
+</span><span><a class="LN" name="555">  555   </a>        ssSetSFcnDWorkAux(rts, dWorkAuxRecord);
+</span><span><a class="LN" name="556">  556   </a>        _ssSetNumDWork(rts, 1);
+</span><span><a class="LN" name="557">  557   </a>
+</span><span><a class="LN" name="558">  558   </a>        <span class="CT">// PWORK</span>
+</span><span><a class="LN" name="559">  559   </a>        ssSetDWorkWidth(rts, 0, 1);
+</span><span><a class="LN" name="560">  560   </a>        ssSetDWorkDataType(rts, 0,SS_POINTER);
+</span><span><a class="LN" name="561">  561   </a>        ssSetDWorkComplexSignal(rts, 0, 0);
+</span><span><a class="LN" name="562">  562   </a>        ssSetDWork(rts, 0, &amp;autoGenTest_DW-&gt;SFunction_PWORK_b);
+</span><span><a class="LN" name="563">  563   </a>      <b>}</b>
+</span><span><a class="LN" name="564">  564   </a>
+</span><span><a class="LN" name="565">  565   </a>      <span class="CT">// registration</span>
+</span><span><a class="LN" name="566">  566   </a>      WBToolbox(rts);
+</span><span><a class="LN" name="567">  567   </a>      sfcnInitializeSizes(rts);
+</span><span><a class="LN" name="568">  568   </a>      sfcnInitializeSampleTimes(rts);
+</span><span><a class="LN" name="569">  569   </a>
+</span><span><a class="LN" name="570">  570   </a>      <span class="CT">// adjust sample time</span>
+</span><span><a class="LN" name="571">  571   </a>      ssSetSampleTime(rts, 0, 0.0);
+</span><span><a class="LN" name="572">  572   </a>      ssSetOffsetTime(rts, 0, 0.0);
+</span><span><a class="LN" name="573">  573   </a>      sfcnTsMap[0] = 0;
+</span><span><a class="LN" name="574">  574   </a>
+</span><span><a class="LN" name="575">  575   </a>      <span class="CT">// set compiled values of dynamic vector attributes</span>
+</span><span><a class="LN" name="576">  576   </a>      ssSetNumNonsampledZCs(rts, 0);
+</span><span><a class="LN" name="577">  577   </a>
+</span><span><a class="LN" name="578">  578   </a>      <span class="CT">// Update connectivity flags for each port</span>
+</span><span><a class="LN" name="579">  579   </a>      _ssSetInputPortConnected(rts, 0, 1);
+</span><span><a class="LN" name="580">  580   </a>
+</span><span><a class="LN" name="581">  581   </a>      <span class="CT">// Update the BufferDstPort flags for each input port</span>
+</span><span><a class="LN" name="582">  582   </a>      ssSetInputPortBufferDstPort(rts, 0, -1);
+</span><span><a class="LN" name="583">  583   </a>    <b>}</b>
+</span><span><a class="LN" name="584">  584   </a>  <b>}</b>
+</span><span><a class="LN" name="585">  585   </a>
+</span><span><a class="LN" name="586">  586   </a>  <span class="CT">// Level2 S-Function Block: '<a href="matlab:coder.internal.code2model('autoGenTest:6')" name="code2model"><font color="#117755"><i>&lt;Root&gt;/Simulator Synchronizer</i></font></a>' (WBToolbox)</span>
+</span><span><a class="LN" name="587">  587   </a>  <b>{</b>
+</span><span><a class="LN" name="588">  588   </a>    SimStruct *rts = autoGenTest_M-&gt;childSfunctions[0];
+</span><span><a class="LN" name="589">  589   </a>    sfcnStart(rts);
+</span><span><a class="LN" name="590">  590   </a>    <span class="KW">if</span> (ssGetErrorStatus(rts) != (NULL))
+</span><span><a class="LN" name="591">  591   </a>      <span class="KW">return</span>;
+</span><span><a class="LN" name="592">  592   </a>  <b>}</b>
+</span><span><a class="LN" name="593">  593   </a>
+</span><span><a class="LN" name="594">  594   </a>  <span class="CT">// Level2 S-Function Block: '<a href="matlab:coder.internal.code2model('autoGenTest:2:1672')" name="code2model"><font color="#117755"><i>&lt;S1&gt;/S-Function</i></font></a>' (WBToolbox)</span>
+</span><span><a class="LN" name="595">  595   </a>  <b>{</b>
+</span><span><a class="LN" name="596">  596   </a>    SimStruct *rts = autoGenTest_M-&gt;childSfunctions[1];
+</span><span><a class="LN" name="597">  597   </a>    sfcnStart(rts);
+</span><span><a class="LN" name="598">  598   </a>    <span class="KW">if</span> (ssGetErrorStatus(rts) != (NULL))
+</span><span><a class="LN" name="599">  599   </a>      <span class="KW">return</span>;
+</span><span><a class="LN" name="600">  600   </a>  <b>}</b>
+</span><span><a class="LN" name="601">  601   </a>
+</span><span><a class="LN" name="602">  602   </a>  <span class="CT">// Level2 S-Function Block: '<a href="matlab:coder.internal.code2model('autoGenTest:1:1769')" name="code2model"><font color="#117755"><i>&lt;S2&gt;/S-Function</i></font></a>' (WBToolbox)</span>
+</span><span><a class="LN" name="603">  603   </a>  <b>{</b>
+</span><span><a class="LN" name="604">  604   </a>    SimStruct *rts = autoGenTest_M-&gt;childSfunctions[2];
+</span><span><a class="LN" name="605">  605   </a>    sfcnStart(rts);
+</span><span><a class="LN" name="606">  606   </a>    <span class="KW">if</span> (ssGetErrorStatus(rts) != (NULL))
+</span><span><a class="LN" name="607">  607   </a>      <span class="KW">return</span>;
+</span><span><a class="LN" name="608">  608   </a>  <b>}</b>
+</span><span><a class="LN" name="609">  609   </a>
+</span><span><a class="LN" name="610">  610   </a>  <span class="CT">// Level2 S-Function Block: '<a href="matlab:coder.internal.code2model('autoGenTest:6')" name="code2model"><font color="#117755"><i>&lt;Root&gt;/Simulator Synchronizer</i></font></a>' (WBToolbox)</span>
+</span><span><a class="LN" name="611">  611   </a>  <b>{</b>
+</span><span><a class="LN" name="612">  612   </a>    SimStruct *rts = autoGenTest_M-&gt;childSfunctions[0];
+</span><span><a class="LN" name="613">  613   </a>    sfcnInitializeConditions(rts);
+</span><span><a class="LN" name="614">  614   </a>    <span class="KW">if</span> (ssGetErrorStatus(rts) != (NULL))
+</span><span><a class="LN" name="615">  615   </a>      <span class="KW">return</span>;
+</span><span><a class="LN" name="616">  616   </a>  <b>}</b>
+</span><span><a class="LN" name="617">  617   </a>
+</span><span><a class="LN" name="618">  618   </a>  <span class="CT">// Level2 S-Function Block: '<a href="matlab:coder.internal.code2model('autoGenTest:2:1672')" name="code2model"><font color="#117755"><i>&lt;S1&gt;/S-Function</i></font></a>' (WBToolbox)</span>
+</span><span><a class="LN" name="619">  619   </a>  <b>{</b>
+</span><span><a class="LN" name="620">  620   </a>    SimStruct *rts = autoGenTest_M-&gt;childSfunctions[1];
+</span><span><a class="LN" name="621">  621   </a>    sfcnInitializeConditions(rts);
+</span><span><a class="LN" name="622">  622   </a>    <span class="KW">if</span> (ssGetErrorStatus(rts) != (NULL))
+</span><span><a class="LN" name="623">  623   </a>      <span class="KW">return</span>;
+</span><span><a class="LN" name="624">  624   </a>  <b>}</b>
+</span><span><a class="LN" name="625">  625   </a>
+</span><span><a class="LN" name="626">  626   </a>  <span class="CT">// InitializeConditions for MATLAB Function: '<a href="matlab:coder.internal.code2model('autoGenTest:13:1300')" name="code2model"><font color="#117755"><i>&lt;S3&gt;/MATLAB Function</i></font></a>'</span>
+</span><span><a class="LN" name="627">  627   </a>  autoGenTest_DW-&gt;state_not_empty = false;
+</span><span><a class="LN" name="628">  628   </a>
+</span><span><a class="LN" name="629">  629   </a>  <span class="CT">// Level2 S-Function Block: '<a href="matlab:coder.internal.code2model('autoGenTest:1:1769')" name="code2model"><font color="#117755"><i>&lt;S2&gt;/S-Function</i></font></a>' (WBToolbox)</span>
+</span><span><a class="LN" name="630">  630   </a>  <b>{</b>
+</span><span><a class="LN" name="631">  631   </a>    SimStruct *rts = autoGenTest_M-&gt;childSfunctions[2];
+</span><span><a class="LN" name="632">  632   </a>    sfcnInitializeConditions(rts);
+</span><span><a class="LN" name="633">  633   </a>    <span class="KW">if</span> (ssGetErrorStatus(rts) != (NULL))
+</span><span><a class="LN" name="634">  634   </a>      <span class="KW">return</span>;
+</span><span><a class="LN" name="635">  635   </a>  <b>}</b>
+</span><span><a class="LN" name="636">  636   </a><b>}</b>
+</span><span><a class="LN" name="637">  637   </a>
+</span><span><a class="LN" name="638">  638   </a><span class="CT">// Model terminate function</span>
+</span><span><a class="LN" name="639">  639   </a><span class="DT">void</span> <a name="fcn_autoGenTest_terminate">autoGenTest_terminate</a>(<a href="autoGenTest_types_h.html#type_RT_MODEL_autoGenTest_T" onclick="if (top) if (top.docHiliteMe) top.docHiliteMe(window, 'type_RT_MODEL_autoGenTest_T');" target="_self"><font color="#1122aa">RT_MODEL_autoGenTest_T</font></a> *<span class="DT">const</span> autoGenTest_M)
+</span><span><a class="LN" name="640">  640   </a><b>{</b>
+</span><span><a class="LN" name="641">  641   </a>  <span class="CT">// Level2 S-Function Block: '<a href="matlab:coder.internal.code2model('autoGenTest:6')" name="code2model"><font color="#117755"><i>&lt;Root&gt;/Simulator Synchronizer</i></font></a>' (WBToolbox)</span>
+</span><span><a class="LN" name="642">  642   </a>  <b>{</b>
+</span><span><a class="LN" name="643">  643   </a>    SimStruct *rts = autoGenTest_M-&gt;childSfunctions[0];
+</span><span><a class="LN" name="644">  644   </a>    sfcnTerminate(rts);
+</span><span><a class="LN" name="645">  645   </a>  <b>}</b>
+</span><span><a class="LN" name="646">  646   </a>
+</span><span><a class="LN" name="647">  647   </a>  <span class="CT">// Level2 S-Function Block: '<a href="matlab:coder.internal.code2model('autoGenTest:2:1672')" name="code2model"><font color="#117755"><i>&lt;S1&gt;/S-Function</i></font></a>' (WBToolbox)</span>
+</span><span><a class="LN" name="648">  648   </a>  <b>{</b>
+</span><span><a class="LN" name="649">  649   </a>    SimStruct *rts = autoGenTest_M-&gt;childSfunctions[1];
+</span><span><a class="LN" name="650">  650   </a>    sfcnTerminate(rts);
+</span><span><a class="LN" name="651">  651   </a>  <b>}</b>
+</span><span><a class="LN" name="652">  652   </a>
+</span><span><a class="LN" name="653">  653   </a>  <span class="CT">// Level2 S-Function Block: '<a href="matlab:coder.internal.code2model('autoGenTest:1:1769')" name="code2model"><font color="#117755"><i>&lt;S2&gt;/S-Function</i></font></a>' (WBToolbox)</span>
+</span><span><a class="LN" name="654">  654   </a>  <b>{</b>
+</span><span><a class="LN" name="655">  655   </a>    SimStruct *rts = autoGenTest_M-&gt;childSfunctions[2];
+</span><span><a class="LN" name="656">  656   </a>    sfcnTerminate(rts);
+</span><span><a class="LN" name="657">  657   </a>  <b>}</b>
+</span><span><a class="LN" name="658">  658   </a>
+</span><span><a class="LN" name="659">  659   </a>  UNUSED_PARAMETER(autoGenTest_M);
+</span><span><a class="LN" name="660">  660   </a><b>}</b>
+</span><span><a class="LN" name="661">  661   </a>
+</span><span><a class="LN" name="662">  662   </a><span class="CT">//</span>
+</span><span><a class="LN" name="663">  663   </a><span class="CT">// File trailer for generated code.</span>
+</span><span><a class="LN" name="664">  664   </a><span class="CT">//</span>
+</span><span><a class="LN" name="665">  665   </a><span class="CT">// [EOF]</span>
+</span><span><a class="LN" name="666">  666   </a><span class="CT">//</span>
+</span><span><a class="LN" name="667">  667   </a>
+</span></pre>
+</td></tr></table>
+</p>
+</body>
+</html>
